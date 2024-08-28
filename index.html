@@ -30,6 +30,10 @@
                     fontFamily: {
                         manrope: ['Manrope', 'sans-serif']
                     },
+                    backgroundImage: {
+                        'custom-bg': "url('/assets/bg.jpg')",
+                    },
+
                 }
             }
         }
@@ -40,21 +44,21 @@
     <!-- Header Part -->
     <header class="max-w-screen-xl mx-5 lg:mx-auto"
         style="background: linear-gradient(to bottom, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0) 100%), linear-gradient(to top, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 1) 100%);">
-        <nav>
-            <div class="navbar bg-base-100">
+        <nav class="pt-10">
+            <div class="navbar bg-base-100 flex items-center justify-between">
                 <!-- Left side with logo -->
-                <div class="navbar-start">
-                    <a class="btn btn-ghost text-3xl">
+                <div class="navbar-start flex items-center">
+                    <a class="btn btn-ghost text-3xl font-black flex items-center">
                         <i
                             class="fa-solid fa-arrow-right -rotate-45 bg-[#ABEF5F] rounded-full w-10 h-10 flex items-center justify-center p-2 text-2xl"></i>
-                        Rinterio
+                        <span class="ml-2">Rinterio</span>
                     </a>
                 </div>
 
                 <!-- Center part, hidden on smaller screens -->
-                <div class="navbar-center hidden lg:flex">
-                    <ul class="menu menu-horizontal px-1">
-                        <li><a><b>Home</b></a></li>
+                <div class="navbar-center hidden lg:flex flex-grow justify-center">
+                    <ul class="menu menu-horizontal px-1 flex space-x-4">
+                        <li class="font-black"><a>Home</a></li>
                         <li><a>Services</a></li>
                         <li><a>Portfolio</a></li>
                         <li><a>Blogs</a></li>
@@ -63,32 +67,40 @@
                 </div>
 
                 <!-- Right side with buttons and hamburger menu for small devices -->
-                <div class="navbar-end">
+                <div class="navbar-end flex items-center space-x-2">
                     <!-- Hamburger menu icon for small devices with circular border -->
                     <div class="dropdown lg:hidden">
-                        <div class="btn btn-ghost rounded-full p-2 border-2 border-gray-200">
+                        <div class="btn btn-ghost rounded-full p-2 border-2 border-gray-200 flex items-center justify-center w-12 h-12">
                             <!-- Hamburger icon with uniform lines -->
-                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
-                                stroke="currentColor">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                    d="M4 6h16M4 12h16M4 18h16" />
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
                             </svg>
                         </div>
                     </div>
 
+
                     <!-- Other buttons for large devices with circular borders -->
                     <div class="hidden lg:flex space-x-2">
-                        <a class="btn btn-ghost rounded-full p-2 border-2 border-gray-200">
-                            <i class="fa-solid fa-magnifying-glass"></i>
+                        <a
+                            class="btn btn-ghost rounded-full p-2 border-2 border-gray-200 flex items-center justify-center w-12 h-12">
+                            <i class="fa-solid fa-magnifying-glass text-xl"></i>
                         </a>
-                        <a class="btn btn-ghost rounded-full p-2 border-2 border-gray-200">
-                            <i class="fa-solid fa-cart-shopping"></i>
+                        <a
+                            class="btn btn-ghost rounded-full p-2 border-2 border-gray-200 flex items-center justify-center w-12 h-12">
+                            <i class="fa-solid fa-cart-shopping text-xl"></i>
                         </a>
-                        <a class="btn px-5 py-3 rounded-[32px]">Book Consult</a>
+
+                        <button
+                            class="px-5 py-3 bg-[#ABEF5F] rounded-[32px] flex items-center space-x-2 font-black text-[#1C1C1C] text-xl">
+                            Book Consult
+                            <i
+                                class="fa-solid fa-arrow-right -rotate-45 bg-[#1C1C1C] rounded-full w-7 h-7 text-white text-xl flex items-center justify-center"></i>
+                        </button>
                     </div>
                 </div>
             </div>
         </nav>
+
         <section>
             <div class="max-w-5xl mx-auto flex flex-col items-center text-center pt-14">
                 <img src="assets/banner.png" alt="">
@@ -214,25 +226,72 @@
                     modern sophistication, featuring weathered wood, sleek metal accents.</p>
             </div>
             <!-- Cards Container -->
-            <div class="flex justify-center">
-                <div class="grid grid-cols-1 lg:grid-cols-2 gap-y-6 lg:gap-y-0 lg:gap-x-6">
-                    <!-- Row for Card1 and Card2 -->
-                    <div class="lg:col-span-2 flex flex-col lg:flex-row gap-6">
-                        <!-- Card1 -->
-                        <div class="flex-1 p-6 border border-[#E9E9E9] rounded-[16px] mt-8 space-x-6"
-                            style="max-width: 772px;">
-                            <div class="lg:flex lg:space-x-5">
+            <section>
+                <div class="flex justify-center">
+                    <div class="grid grid-cols-1 lg:grid-cols-2 gap-y-6 lg:gap-y-0 lg:gap-x-6">
+                        <!-- Row for Card1 and Card2 -->
+                        <div class="lg:col-span-2 flex flex-col lg:flex-row gap-6">
+                            <!-- Card1 -->
+                            <div class="flex-1 p-6 border border-[#E9E9E9] rounded-[16px] mt-8 space-x-6"
+                                style="max-width: 772px;">
+                                <div class="lg:flex lg:space-x-5">
+                                    <div class="w-full lg:w-auto">
+                                        <img src="assets/img1.png" alt=""
+                                            class="w-full lg:w-auto object-cover rounded-[16px]">
+                                    </div>
+                                    <div class="mt-6 flex-1">
+                                        <h3 class="font-black text-2xl text-[#494949]">Commercial</h3>
+                                        <p class="mt-6 font-medium text-[#737373] text-base">
+                                            The barn house captivates with its blend of rustic charm and modern. The
+                                            barn
+                                            house captivates
+                                            with
+                                            its
+                                            blend of rustic charm and modern.
+                                        </p>
+                                        <div class="mt-5 flex space-x-1">
+                                            <span class="text-[#212121] text-xl font-black">View Details</span>
+                                            <i
+                                                class="fa-solid fa-arrow-right -rotate-45 bg-[#ABEF5F] rounded-full w-8 h-8 text-xl flex items-center justify-center"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Card2 -->
+                            <div class="flex-1 p-6 border border-[#E9E9E9] rounded-[16px] mt-8"
+                                style="max-width: 374px;">
                                 <div class="w-full lg:w-auto">
-                                    <img src="assets/img1.png" alt=""
+                                    <img src="assets/img2.png" alt=""
+                                        class="w-full lg:w-auto object-cover rounded-[16px]">
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Row for Card3, Card4, and Card5 -->
+                        <div class="lg:col-span-2 lg:flex lg:justify-between mt-8 space-x-0 lg:space-x-6">
+                            <!-- Card3 -->
+                            <div class="flex p-6 border border-[#E9E9E9] rounded-[16px]" style="max-width: 274px;">
+                                <div class="w-full lg:w-auto">
+                                    <img src="assets/img3.png" alt=""
+                                        class="w-full lg:w-auto object-cover rounded-[16px]">
+                                </div>
+                            </div>
+
+                            <!-- Card4 -->
+                            <div class="lg:flex p-6 border border-[#E9E9E9] rounded-[16px]" style="max-width: 573px;">
+                                <div class="w-full lg:w-auto">
+                                    <img src="assets/img4.png" alt=""
                                         class="w-full lg:w-auto object-cover rounded-[16px]">
                                 </div>
                                 <div class="mt-6 flex-1">
                                     <h3 class="font-black text-2xl text-[#494949]">Commercial</h3>
                                     <p class="mt-6 font-medium text-[#737373] text-base">
-                                        The barn house captivates with its blend of rustic charm and modern. The barn
-                                        house captivates
-                                        with
-                                        its
+                                        The barn house captivates with its blend of rustic charm and modern. The
+                                        barn
+                                        house
+                                        captivates
+                                        with its
                                         blend of rustic charm and modern.
                                     </p>
                                     <div class="mt-5 flex space-x-1">
@@ -242,118 +301,107 @@
                                     </div>
                                 </div>
                             </div>
-                        </div>
 
-                        <!-- Card2 -->
-                        <div class="flex-1 p-6 border border-[#E9E9E9] rounded-[16px] mt-8" style="max-width: 374px;">
-                            <div class="w-full lg:w-auto">
-                                <img src="assets/img2.png" alt="" class="w-full lg:w-auto object-cover rounded-[16px]">
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Row for Card3, Card4, and Card5 -->
-                    <div class="lg:col-span-2 lg:flex lg:justify-between mt-8 space-x-0 lg:space-x-6">
-                        <!-- Card3 -->
-                        <div class="flex p-6 border border-[#E9E9E9] rounded-[16px]" style="max-width: 274px;">
-                            <div class="w-full lg:w-auto">
-                                <img src="assets/img3.png" alt="" class="w-full lg:w-auto object-cover rounded-[16px]">
-                            </div>
-                        </div>
-
-                        <!-- Card4 -->
-                        <div class="lg:flex p-6 border border-[#E9E9E9] rounded-[16px]" style="max-width: 573px;">
-                            <div class="w-full lg:w-auto">
-                                <img src="assets/img4.png" alt="" class="w-full lg:w-auto object-cover rounded-[16px]">
-                            </div>
-                            <div class="mt-6 flex-1">
-                                <h3 class="font-black text-2xl text-[#494949]">Commercial</h3>
-                                <p class="mt-6 font-medium text-[#737373] text-base">
-                                    The barn house captivates with its blend of rustic charm and modern. The barn house
-                                    captivates
-                                    with its
-                                    blend of rustic charm and modern.
-                                </p>
-                                <div class="mt-5 flex space-x-1">
-                                    <span class="text-[#212121] text-xl font-black">View Details</span>
-                                    <i
-                                        class="fa-solid fa-arrow-right -rotate-45 bg-[#ABEF5F] rounded-full w-8 h-8 text-xl flex items-center justify-center"></i>
+                            <!-- Card5 -->
+                            <div class="flex p-6 border border-[#E9E9E9] rounded-[16px]" style="max-width: 247px;">
+                                <div class="w-full lg:w-auto">
+                                    <img src="assets/img5.png" alt=""
+                                        class="w-full lg:w-auto object-cover rounded-[16px]">
                                 </div>
                             </div>
                         </div>
-
-                        <!-- Card5 -->
-                        <div class="flex p-6 border border-[#E9E9E9] rounded-[16px]" style="max-width: 247px;">
-                            <div class="w-full lg:w-auto">
-                                <img src="assets/img5.png" alt="" class="w-full lg:w-auto object-cover rounded-[16px]">
-                            </div>
-                        </div>
                     </div>
                 </div>
-            </div>
+            </section>
         </section>
+
         <!-- Let's connect -->
         <section class="bg-gray-100 flex items-center justify-center min-h-screen">
-            <div class="bg-white p-8 rounded-lg shadow-lg max-w-md w-full md:max-w-2xl">
-                <div class="text-center mb-6">
-                    <button class="bg-green-200 text-green-800 py-2 px-4 rounded-full mb-4 inline-block">
-                        ➔ Let's Connect
-                    </button>
-                    <h2 class="text-2xl font-bold">Let's Discuss Next Project</h2>
-                    <p class="text-gray-600 mt-2">
-                        The barn house captivates with its blend of rustic charm and modern sophistication, featuring
-                        weathered
-                        wood, sleek metal accents.
-                    </p>
+            <div class="bg-custom-bg p-8 rounded-lg shadow-lg max-w-md w-full md:max-w-full">
+                <div class="text-center">
+                    <btn class="px-4 py-2 bg-[#ABEF5F] bg-opacity-20 rounded-[24px] text-base text-[#494949]"><i
+                            class="fa-solid fa-arrow-right mt-[100px]"></i> Let’s Connect</btn>
+                    <h3 class="text-4xl font-bold mt-4 leading-snug text-[#212121]">Let’s Discuss Next Project</h3>
+                    <p class="mt-6 text-[#494949]">The barn house captivates with its blend of rustic charm and<br>
+                        modern sophistication, featuring weathered wood, sleek metal accents.</p>
                 </div>
+                <div class="lg:max-w-[970px] mx-auto mt-8">
+                    <form>
+                        <div class="grid grid-cols-1 lg:grid-cols-2 gap-4 mb-4">
+                            <div>
+                                <label class="sr-only text-base text-[#A0A0A0]" for="first_name">First Name*</label>
+                                <input type="text" id="first_name" name="first_name" placeholder="First Name*"
+                                    class="w-full p-3 text-base text-[#A0A0A0] border border-[#E9E9E9] rounded-[64px]">
+                            </div>
+                            <div>
+                                <label class="sr-only" for="last_name">Last Name*</label>
+                                <input type="text" id="last_name" name="last_name" placeholder="Last Name*"
+                                    class="w-full p-3 text-base text-[#A0A0A0] border border-[#E9E9E9] rounded-[64px]">
+                            </div>
+                            <div>
+                                <label class="sr-only" for="phone_number">Phone Number*</label>
+                                <input type="text" id="phone_number" name="phone_number" placeholder="Phone Number*"
+                                    class="w-full p-3 text-base text-[#A0A0A0] border border-[#E9E9E9] rounded-[64px]">
+                            </div>
+                            <div>
+                                <label class="sr-only" for="email_number">Email Number*</label>
+                                <input type="email" id="email_number" name="email_number" placeholder="Email Number*"
+                                    class="w-full p-3 text-base text-[#A0A0A0] border border-[#E9E9E9] rounded-[64px]">
+                            </div>
+                        </div>
 
-                <form>
-                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4">
-                        <div>
-                            <label class="sr-only" for="first_name">First Name*</label>
-                            <input type="text" id="first_name" name="first_name" placeholder="First Name*"
-                                class="w-full p-3 border border-gray-300 rounded-[64px]">
+                        <div class="mb-6">
+                            <label class="sr-only" for="message">Message</label>
+                            <textarea id="message" name="message" rows="4" placeholder="Write your message here"
+                                class="w-full p-3 text-base text-[#A0A0A0] border border-[#E9E9E9] rounded-[20px]"></textarea>
                         </div>
-                        <div>
-                            <label class="sr-only" for="last_name">Last Name*</label>
-                            <input type="text" id="last_name" name="last_name" placeholder="Last Name*"
-                                class="w-full p-3 border border-gray-300 rounded-[64px]">
-                        </div>
-                        <div>
-                            <label class="sr-only" for="phone_number">Phone Number*</label>
-                            <input type="text" id="phone_number" name="phone_number" placeholder="Phone Number*"
-                                class="w-full p-3 border border-gray-300 rounded-[64px]">
-                        </div>
-                        <div>
-                            <label class="sr-only" for="email_number">Email Number*</label>
-                            <input type="email" id="email_number" name="email_number" placeholder="Email Number*"
-                                class="w-full p-3 border border-gray-300 rounded-[64px]">
-                        </div>
-                    </div>
 
-                    <div class="mb-6">
-                        <label class="sr-only" for="message">Message</label>
-                        <textarea id="message" name="message" rows="4" placeholder="Write your message here"
-                            class="w-full p-3 border border-gray-300 rounded-[20px]"></textarea>
-                    </div>
-
-                    <div class="text-center">
-                        <button type="submit"
-                            class="w-full bg-green-500 text-white py-3 px-6 rounded-[px] hover:bg-green-600 transition duration-300">
-                            Send Mail<i
-                                class="fa-solid fa-arrow-right -rotate-45 bg-[#ABEF5F] rounded-full w-8 h-8 text-xl flex items-center justify-center"></i>
-                        </button>
-                    </div>
-                </form>
+                        <div class="text-center">
+                            <button type="submit"
+                                class="w-full bg-[#ABEF5F] text-[#1C1C1C] font-black py-3 px-6 rounded-[32px] flex items-center justify-center space-x-2">
+                                <span>Send Mail</span>
+                                <i
+                                    class="fa-solid fa-arrow-right -rotate-45 bg-[#1C1C1C] rounded-full w-7 h-7 text-white text-xl flex items-center justify-center"></i>
+                            </button>
+                        </div>
+                    </form>
+                </div>
             </div>
-        </section>
 
         </section>
     </main>
 
     <!-- Footer Part -->
-    <footer>
-
+    <footer class="bg-[#1C1C1C]">
+        <div class="pt-[100px] mx-auto max-w-2xl">
+            <div class="flex space-x-2 items-center justify-center">
+                <div>
+                    <i
+                        class="fa-solid fa-arrow-right -rotate-45 bg-[#ABEF5F] rounded-full w-10 h-10 flex items-center justify-center p-2 text-2xl"></i>
+                </div>
+                <div>
+                    <span class="font-black text-3xl text-[#E9E9E9]">Rinterio</span>
+                </div>
+            </div>
+            <p class="font-medium text-base text-[#737373] text-center mt-4">The barn house captivates with its blend of
+                rustic
+                charm and modern sophistication, featuring weathered wood, sleek metal accents.</p>
+        </div>
+        <div class="text-[#E9E9E9] text-center lg:flex justify-around max-w-3xl mx-auto mt-12">
+            <div>Home</div>
+            <div>Services</div>
+            <div>Portfolio</div>
+            <div>Blogs</div>
+            <div>Contact Us</div>
+        </div>
+        <div class="pb-[100px]">
+            <button
+                class="px-5 py-3 bg-[#ABEF5F] rounded-[32px] flex items-center space-x-2 font-black text-[#1C1C1C] text-xl mx-auto mt-12">
+                Book Consult
+                <i
+                    class="fa-solid fa-arrow-right -rotate-45 bg-[#1C1C1C] rounded-full w-7 h-7 text-white text-xl flex items-center justify-center"></i>
+            </button>
+        </div>
     </footer>
 </body>
 
