@@ -70,10 +70,13 @@
                 <div class="navbar-end flex items-center space-x-2">
                     <!-- Hamburger menu icon for small devices with circular border -->
                     <div class="dropdown lg:hidden">
-                        <div class="btn btn-ghost rounded-full p-2 border-2 border-gray-200 flex items-center justify-center w-12 h-12">
+                        <div
+                            class="btn btn-ghost rounded-full p-2 border-2 border-gray-200 flex items-center justify-center w-12 h-12">
                             <!-- Hamburger icon with uniform lines -->
-                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M4 6h16M4 12h16M4 18h16" />
                             </svg>
                         </div>
                     </div>
@@ -217,7 +220,7 @@
         </section>
 
         <!-- Our Latest Portfolio section -->
-        <section class="bg-white mt-[100px]">
+        <section class="lg:bg-white mt-[100px]">
             <div class="text-center">
                 <btn class="px-4 py-2 bg-[#ABEF5F] bg-opacity-20 rounded-[24px] text-base text-[#494949]"><i
                         class="fa-solid fa-arrow-right mt-[100px]"></i> Explore our Latest works</btn>
@@ -226,30 +229,24 @@
                     modern sophistication, featuring weathered wood, sleek metal accents.</p>
             </div>
             <!-- Cards Container -->
-            <section>
-                <div class="flex justify-center">
+            <section class="m-5 lg:m-auto">
+                <div class="flex justify-center pb-[100px]">
                     <div class="grid grid-cols-1 lg:grid-cols-2 gap-y-6 lg:gap-y-0 lg:gap-x-6">
                         <!-- Row for Card1 and Card2 -->
                         <div class="lg:col-span-2 flex flex-col lg:flex-row gap-6">
                             <!-- Card1 -->
-                            <div class="flex-1 p-6 border border-[#E9E9E9] rounded-[16px] mt-8 space-x-6"
-                                style="max-width: 772px;">
-                                <div class="lg:flex lg:space-x-5">
+                            <div class="flex-1 p-6 border border-[#E9E9E9] rounded-[16px] mt-8 bg-white lg:max-w-[772px]">
+                                <div class="flex flex-col lg:flex-row lg:items-center lg:space-x-5 h-full">
                                     <div class="w-full lg:w-auto">
-                                        <img src="assets/img1.png" alt=""
-                                            class="w-full lg:w-auto object-cover rounded-[16px]">
+                                        <img src="assets/img1.png" alt="" class="w-full lg:w-auto object-cover rounded-[16px]">
                                     </div>
-                                    <div class="mt-6 flex-1">
+                                    <div class="mt-6 lg:mt-0 flex-1 flex flex-col justify-center">
                                         <h3 class="font-black text-2xl text-[#494949]">Commercial</h3>
                                         <p class="mt-6 font-medium text-[#737373] text-base">
-                                            The barn house captivates with its blend of rustic charm and modern. The
-                                            barn
-                                            house captivates
-                                            with
-                                            its
+                                            The barn house captivates with its blend of rustic charm and modern. The barn house captivates with its
                                             blend of rustic charm and modern.
                                         </p>
-                                        <div class="mt-5 flex space-x-1">
+                                        <div class="mt-5 flex space-x-1 items-center">
                                             <span class="text-[#212121] text-xl font-black">View Details</span>
                                             <i
                                                 class="fa-solid fa-arrow-right -rotate-45 bg-[#ABEF5F] rounded-full w-8 h-8 text-xl flex items-center justify-center"></i>
@@ -258,40 +255,41 @@
                                 </div>
                             </div>
 
+
+
+
+
                             <!-- Card2 -->
-                            <div class="flex-1 p-6 border border-[#E9E9E9] rounded-[16px] mt-8"
-                                style="max-width: 374px;">
+                            <div class="flex-1 p-6 border border-[#E9E9E9] rounded-[16px] mt-8 lg:max-w-[374px] bg-white">
                                 <div class="w-full lg:w-auto">
                                     <img src="assets/img2.png" alt=""
                                         class="w-full lg:w-auto object-cover rounded-[16px]">
                                 </div>
                             </div>
+
                         </div>
 
                         <!-- Row for Card3, Card4, and Card5 -->
-                        <div class="lg:col-span-2 lg:flex lg:justify-between mt-8 space-x-0 lg:space-x-6">
+                        <div class="lg:col-span-2 lg:flex lg:justify-between space-x-0 lg:mt-6">
+
                             <!-- Card3 -->
-                            <div class="flex p-6 border border-[#E9E9E9] rounded-[16px]" style="max-width: 274px;">
-                                <div class="w-full lg:w-auto">
-                                    <img src="assets/img3.png" alt=""
-                                        class="w-full lg:w-auto object-cover rounded-[16px]">
+                            <div class="flex p-6 border border-[#E9E9E9] rounded-[16px] lg:max-w-[274px] bg-white items-center justify-center mb-4">
+                                <div class="w-full">
+                                    <img src="assets/img3.png" alt="" class="w-full object-cover rounded-[16px]">
                                 </div>
                             </div>
 
+
                             <!-- Card4 -->
-                            <div class="lg:flex p-6 border border-[#E9E9E9] rounded-[16px]" style="max-width: 573px;">
+                            <div
+                                class="lg:flex p-6 border border-[#E9E9E9] rounded-[16px] max-w-[573px] bg-white space-x-3 justify-around items-center mb-4">
                                 <div class="w-full lg:w-auto">
-                                    <img src="assets/img4.png" alt=""
-                                        class="w-full lg:w-auto object-cover rounded-[16px]">
+                                    <img src="assets/img4.png" alt="" class="w-full lg:w-auto object-cover rounded-[16px]">
                                 </div>
                                 <div class="mt-6 flex-1">
                                     <h3 class="font-black text-2xl text-[#494949]">Commercial</h3>
                                     <p class="mt-6 font-medium text-[#737373] text-base">
-                                        The barn house captivates with its blend of rustic charm and modern. The
-                                        barn
-                                        house
-                                        captivates
-                                        with its
+                                        The barn house captivates with its blend of rustic charm and modern. The barn house captivates with its
                                         blend of rustic charm and modern.
                                     </p>
                                     <div class="mt-5 flex space-x-1">
@@ -302,9 +300,10 @@
                                 </div>
                             </div>
 
+
                             <!-- Card5 -->
-                            <div class="flex p-6 border border-[#E9E9E9] rounded-[16px]" style="max-width: 247px;">
-                                <div class="w-full lg:w-auto">
+                            <div class="flex p-6 border border-[#E9E9E9] rounded-[16px] lg:max-w-[247px] bg-white items-center justify-center">
+                                <div class="w-full">
                                     <img src="assets/img5.png" alt=""
                                         class="w-full lg:w-auto object-cover rounded-[16px]">
                                 </div>
@@ -322,12 +321,14 @@
                     <h3 class="text-3xl font-bold text-[#212121] mb-6">What Our Clients Say</h3>
                     <div class="bg-white p-6 rounded-[16px] shadow-md space-y-6">
                         <div class="p-4 border-l-4 border-[#ABEF5F]">
-                            <p class="text-base text-[#737373]">“The team did an amazing job transforming our space. Their
+                            <p class="text-base text-[#737373]">“The team did an amazing job transforming our space.
+                                Their
                                 attention to detail and creativity were outstanding.”</p>
                             <h4 class="mt-2 font-semibold text-xl text-[#494949]">Alex Johnson</h4>
                         </div>
                         <div class="p-4 border-l-4 border-[#ABEF5F]">
-                            <p class="text-base text-[#737373]">“We are thrilled with the results! The design is exactly what we
+                            <p class="text-base text-[#737373]">“We are thrilled with the results! The design is exactly
+                                what we
                                 wanted and exceeded our expectations.”</p>
                             <h4 class="mt-2 font-semibold text-xl text-[#494949]">Emily Davis</h4>
                         </div>
@@ -335,7 +336,8 @@
                 </div>
                 <div class="lg:w-1/2 mt-6 lg:mt-0">
                     <div class="bg-white p-6 rounded-[16px] shadow-md h-full flex items-center justify-center">
-                        <p class="text-center text-lg text-[#737373]">"Your comfort is our priority. Let us transform your space
+                        <p class="text-center text-lg text-[#737373]">"Your comfort is our priority. Let us transform
+                            your space
                             into something extraordinary."</p>
                     </div>
                 </div>
@@ -344,8 +346,8 @@
 
 
         <!-- Let's connect -->
-        <section class="bg-gray-100 flex items-center justify-center min-h-screen">
-            <div class="bg-custom-bg p-8 rounded-lg shadow-lg max-w-md w-full md:max-w-full">
+        <section class="flex items-center justify-center min-h-screen">
+            <div class="bg-custom-bg p-8 rounded-lg w-full max-w-full">
                 <div class="text-center">
                     <btn class="px-4 py-2 bg-[#ABEF5F] bg-opacity-20 rounded-[24px] text-base text-[#494949]"><i
                             class="fa-solid fa-arrow-right mt-[100px]"></i> Let’s Connect</btn>
@@ -353,7 +355,7 @@
                     <p class="mt-6 text-[#494949]">The barn house captivates with its blend of rustic charm and<br>
                         modern sophistication, featuring weathered wood, sleek metal accents.</p>
                 </div>
-                <div class="lg:max-w-[970px] mx-auto mt-8">
+                <div class="lg:max-w-[970px] mx-auto mt-8 pb-[100px]">
                     <form>
                         <div class="grid grid-cols-1 lg:grid-cols-2 gap-4 mb-4">
                             <div>
